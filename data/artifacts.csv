@@ -1,0 +1,4 @@
+id,name,location,period,material,type,significance,dimensions_cm,condition,excavation_date,carbon_date
+ar001,Bronze Age Axehead,Norfolk,Bronze Age,Bronze,Tool,High,15x8x3,Good,2023-06-15,1200BCE
+ar002,Roman Oil Lamp,York,Roman,Clay,Household,Medium,10x5x4,Fair,2022-08-22,150CE
+ar003,Viking Sword Pommel,Northumberland,Viking,Iron/Gold,Weapon,High,8x6x4,Excellent,2023-11-30,900CE

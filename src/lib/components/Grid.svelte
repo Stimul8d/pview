@@ -4,17 +4,27 @@
   import { fade } from 'svelte/transition';
 
   export let items: PViewItem[] = [];
+
+  function handleSelect(id: string, event: MouseEvent | KeyboardEvent) {
+    if (event instanceof KeyboardEvent && event.key !== 'Enter' && event.key !== ' ') {
+      return;
+    }
+    pview.select(id);
+  }
 </script>
 
-<div class="grid"
-  transition:fade={{ duration: 200 }}>
+<div class="grid" transition:fade={{ duration: 200 }}>
   {#each items as item (item.id)}
-    <div class="item"
-      on:click={() => pview.select(item.id)}
-      animate:flip={{ duration: 200 }}>
-      <img src={item.image} alt={item.title} />
+    <button
+      class="item"
+      role="gridcell"
+      on:click={(e) => handleSelect(item.id, e)}
+      on:keydown={(e) => handleSelect(item.id, e)}>
+      {#if item.image}
+        <img src={item.image} alt={item.title} />
+      {/if}
       <div class="title">{item.title}</div>
-    </div>
+    </button>
   {/each}
 </div>
 
@@ -28,21 +38,25 @@
 
   .item {
     background: #fff;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
     cursor: pointer;
     transition: transform 0.2s;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
   }
 
   .item:hover {
     transform: translateY(-2px);
+    border-color: #999;
   }
 
   img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 4px 4px 0 0;
   }
 
   .title {

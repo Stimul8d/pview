@@ -1,0 +1,4 @@
+id,title,artist,year,genre,label,producer,length_mins,tracks,peak_uk,peak_us,platinum_uk,image_url
+a001,Parklife,Blur,1994,Britpop,Food Records,Stephen Street,53,16,1,6,4,https://example.com/parklife.jpg
+a002,OK Computer,Radiohead,1997,Alternative Rock,Parlophone,Nigel Godrich,53,12,1,21,3,https://example.com/okcomputer.jpg
+a003,Different Class,Pulp,1995,Britpop,Island Records,Chris Thomas,48,12,1,34,4,https://example.com/differentclass.jpg

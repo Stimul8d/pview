@@ -1,0 +1,4 @@
+id,name,type,manufacturer,connectivity,year,price_gbp,wireless,battery_life_hours,weight_g,dpi,image_url
+p001,MX Master 3S,Mouse,Logitech,USB/Bluetooth,2022,119.99,true,70,141,8000,https://example.com/mx3s.jpg
+p002,BlackWidow V3,Keyboard,Razer,USB,2021,179.99,false,0,1042,null,https://example.com/blackwidow.jpg
+p003,Surface Pen,Stylus,Microsoft,Bluetooth,2023,99.99,true,150,20,null,https://example.com/surface-pen.jpg

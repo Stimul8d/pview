@@ -1,0 +1,4 @@
+id,race_name,circuit,year,winner,team,qualifying_position,fastest_lap,weather,temp_celsius,lap_count,race_duration,dnfs,image_url
+2024_01,Bahrain GP,Bahrain International Circuit,2024,Max Verstappen,Red Bull,1,1:32.608,Clear,28,57,5400.23,3,https://example.com/bahrain.jpg
+2024_02,Saudi Arabian GP,Jeddah Corniche Circuit,2024,Max Verstappen,Red Bull,1,1:31.632,Clear,26,50,5100.44,2,https://example.com/jeddah.jpg
+2024_03,Australian GP,Albert Park Circuit,2024,Carlos Sainz,Ferrari,2,1:34.551,Cloudy,22,58,5500.12,4,https://example.com/melbourne.jpg
